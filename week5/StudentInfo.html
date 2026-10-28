@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Student Enrollment Form</title>
+</head>
+<body style="background-color: beige;">
+    <h2>Student Details</h2>
+
+    <form action="/submit-data" method="post">
+        First Name: <input name="firstName" type="text" required><br><br>
+        Last Name: <input name="lastName" type="text" required><br><br>
+        Email: <input name="email" type="email" required><br><br>
+        Age: <input name="myAge" type="number" required><br><br>
+
+        <p>Please select your gender:</p>
+        <input type="radio" name="gender" value="male" required> Male<br>
+        <input type="radio" name="gender" value="female"> Female<br>
+        <input type="radio" name="gender" value="other"> Other<br>
+
+        <p>Qualifications</p>
+        <input type="checkbox" name="Qual" value="GCSE"> GCSE<br>
+        <input type="checkbox" name="Qual" value="A-level"> A-level<br>
+        <input type="checkbox" name="Qual" value="HNC"> HNC<br>
+        <input type="checkbox" name="Qual" value="B.Sc"> B.Sc<br>
+        <input type="checkbox" name="Qual" value="Master Degree"> Master Degree<br>
+        <input type="checkbox" name="Qual" value="PhD"> PhD<br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
